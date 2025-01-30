@@ -1,2 +1,3 @@
 # QA
-Centralized Quality Assurance assets for the organization  
+
+Centralized Quality Assurance assets for the organization

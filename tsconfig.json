@@ -1,0 +1,12 @@
+{
+  "extends": ["./src/tsconfig/tsconfig.node.json"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "rootDir": "./src"
+  },
+  "exclude": ["prettier.config.js", "node_modules", "dist", "eslint.config.js"]
+}
