@@ -1,9 +1,11 @@
 import path from 'node:path';
+import tsconfigPaths from 'vite-tsconfig-paths';
 import type { ViteUserConfig } from 'vitest/config';
 
 export interface VitestConfig extends ViteUserConfig {}
 
 export const vitestConfig: VitestConfig = {
+  plugins: [tsconfigPaths()],
   test: {
     coverage: {
       // @ts-ignore since 'c8' custom

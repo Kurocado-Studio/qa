@@ -5,4 +5,4 @@ export {
 
 export { type VitestConfig, vitestConfig } from '~/common/vitestConfig';
 
-export { defineConfig } from 'vitest/config';
+export { defineConfig as defineVitestConfig } from 'vitest/config';

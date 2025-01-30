@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@eslint/js": "^9.16.0",
+    "@remix-run/dev": "^2.15.3",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
