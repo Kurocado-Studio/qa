@@ -5,9 +5,9 @@ export {
 
 export { renderComponent, auditComponentA11y } from './remix/utils';
 
-export * from '@testing-library/react';
+export * as browserLibrary from '@testing-library/react';
 
-export type * from '@testing-library/react';
+export type * as BrowserLibrary from '@testing-library/react';
 
 export { type VitestConfig, vitestConfig } from './common/vitestConfig';
 
