@@ -13,7 +13,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc && copyfiles -u 1 src/tsconfig/*.json dist",
+    "build": "tsc",
     "commitlint": "pnpm exec commitlint --edit .git/COMMIT_EDITMSG",
     "eslint": "eslint --max-warnings=0 .",
     "eslint-check": "eslint --max-warnings=0 .",
