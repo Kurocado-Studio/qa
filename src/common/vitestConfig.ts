@@ -6,7 +6,7 @@ export interface VitestConfig extends ViteUserConfig {}
 export const vitestConfig: VitestConfig = {
   test: {
     coverage: {
-      // @ts-expect-error since its 'c8' custom
+      // @ts-ignore since 'c8' custom
       provider: 'c8',
       reporter: ['text', 'html'],
     },
