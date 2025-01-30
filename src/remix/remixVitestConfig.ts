@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { get } from 'lodash-es';
 import path from 'node:path';
 
-import { type VitestConfig, vitestConfig } from '~/common/vitestConfig';
+import { type VitestConfig, vitestConfig } from '../common/vitestConfig';
 
 export interface RemixVitestConfig extends VitestConfig {}
 
