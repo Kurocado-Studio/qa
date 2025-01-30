@@ -1,5 +1,5 @@
 {
-  "extends": ["./src/tsconfig/tsconfig.node.json"],
+  "extends": ["@kurocado-studio/styleguide/tsconfig/tsconfig.node.json"],
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
