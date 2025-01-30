@@ -78,11 +78,14 @@ importers:
       '@commitlint/cli':
         specifier: 19.0.3
         version: 19.0.3(@types/node@20.5.0)(typescript@5.7.2)
+      '@commitlint/config-conventional':
+        specifier: 19.0.3
+        version: 19.0.3
       '@kurocado-studio/styleguide':
         specifier: 1.10.3
         version: 1.10.3(@commitlint/cli@19.0.3(@types/node@20.5.0)(typescript@5.7.2))(@commitlint/config-conventional@19.0.3)(@testing-library/jest-dom@6.6.3)(@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.5(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@18.3.1(react@18.2.0))(react@18.2.0))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.0))(@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.5.0)))(eslint@9.16.0(jiti@2.4.2))(husky@9.0.11)(prettier@3.3.3)(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(rollup@4.32.1)(semantic-release@24.2.1(typescript@5.7.2))(typescript@5.7.2)(vite@5.4.14(@types/node@20.5.0))(vitest-axe@0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1)))(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))
       '@types/react':
-        specifier: ^19.0.8
+        specifier: 19.0.8
         version: 19.0.8
       commitlint:
         specifier: 19.6.0
