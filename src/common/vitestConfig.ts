@@ -18,6 +18,8 @@ export const vitestConfig: VitestConfig = {
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './src'),
+      '@src': path.resolve(__dirname, './src'),
+      '@app': path.resolve(__dirname, './app'),
     },
   },
 };
