@@ -5,8 +5,12 @@
     "declarationDir": "./dist",
     "esModuleInterop": true,
     "outDir": "./dist",
+    "baseUrl": "./src",
     "resolveJsonModule": true,
-    "rootDir": "./src"
+    "rootDir": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
   "exclude": ["prettier.config.js", "node_modules", "dist", "eslint.config.js"]
 }
