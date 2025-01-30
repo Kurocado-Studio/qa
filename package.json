@@ -1,0 +1,91 @@
+{
+  "name": "@kurocado-studio/qa",
+  "version": "0.0.0-semantically-released",
+  "description": "",
+  "homepage": "https://github.com/kurocado-studio/qa",
+  "bugs": {
+    "url": "https://github.com/kurocado-studio/qa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurocado-studio/qa.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 src/tsconfig/*.json dist",
+    "commitlint": "pnpm exec commitlint --edit .git/COMMIT_EDITMSG",
+    "eslint": "eslint --max-warnings=0 .",
+    "eslint-check": "eslint --max-warnings=0 .",
+    "eslint-fix": "eslint --max-warnings=0 . --fix",
+    "lint": "eslint --max-warnings=0 .",
+    "prepare": "husky install",
+    "prettier-check": "prettier --check . ",
+    "prettier-fix": "prettier --check . --write",
+    "semantic-release": "semantic-release",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "lint-staged": {
+    "*": [
+      "pnpm run prettier-fix"
+    ],
+    "**/*.{ts,tsx}": [
+      "pnpm run eslint-fix",
+      "pnpm run lint"
+    ]
+  },
+  "dependencies": {
+    "@eslint/js": "^9.16.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/jest-axe": "^3.5.9",
+    "@types/lodash-es": "^4.17.12",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "20.5.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/supertest": "^6.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "c8": "^10.1.2",
+    "dotenv": "^16.4.5",
+    "globals": "^15.13.0",
+    "jsdom": "^25.0.1",
+    "prettier-plugin-packagejson": "^2.5.6",
+    "prettier-plugin-sort-imports": "^1.8.6",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "semantic-release-github-pullrequest": "^1.3.0",
+    "typescript-eslint": "^8.17.0",
+    "url-join": "^4.0.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.3",
+    "vitest-axe": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.0.3",
+    "@commitlint/config-conventional": "19.0.3",
+    "commitlint": "19.6.0",
+    "eslint": "9.16.0",
+    "@kurocado-studio/styleguide": "1.10.3",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
