@@ -16,10 +16,6 @@ export const auditComponentA11y = async (
   Component: React.ReactElement,
   wrapper?: ComponentWrapper,
 ): Promise<ReturnType<typeof axe>> => {
-  const container = get(
-    renderComponent(Component, wrapper),
-    ['container'],
-    null,
-  );
+  const container = get(renderComponent(Component, wrapper), ['container'], '');
   return axe(container);
 };

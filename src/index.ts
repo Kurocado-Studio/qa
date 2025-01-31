@@ -3,6 +3,8 @@ export {
   remixVitestConfig,
 } from './remix/remixVitestConfig';
 
+export { remixVitestSetup } from './remix/setup';
+
 export { renderComponent, auditComponentA11y } from './remix/utils';
 
 export * as browserLibrary from '@testing-library/react';

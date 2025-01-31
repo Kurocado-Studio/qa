@@ -1,7 +1,6 @@
 import { vitePlugin as remix } from '@remix-run/dev';
 import react from '@vitejs/plugin-react';
 import { get } from 'lodash-es';
-import path from 'node:path';
 
 import { type VitestConfig, vitestConfig } from '../common/vitestConfig';
 
@@ -28,6 +27,6 @@ export const remixVitestConfig: RemixVitestConfig = {
     ...get(vitestConfig, ['test'], {}),
     css: true,
     environment: 'jsdom',
-    setupFiles: [path.resolve(__dirname, 'src/remix/setup.ts')],
+    setupFiles: ['./setup.remix.ts'],
   },
 };
