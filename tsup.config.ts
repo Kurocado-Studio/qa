@@ -1,15 +1,19 @@
 /* eslint-disable import/no-default-export */
-import { defineConfig } from 'tsup';
+import { type Options, defineConfig } from 'tsup';
 
-export default defineConfig((options) => ({
+const tsupOptions: Options = {
   clean: true,
   dts: true,
-  entry: ['src/index.ts'],
+  entry: ['src/index.ts', 'src/remix/setup.ts'],
   external: ['react'],
   format: ['esm', 'cjs'],
   sourcemap: true,
-  splitting: false,
-  target: 'node20',
+  splitting: true,
+  target: 'esnext',
   treeshake: true,
+};
+
+export default defineConfig((options: Options) => ({
+  ...tsupOptions,
   ...options,
 }));
