@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/vitest';
+import 'fast-text-encoding';
 import { expect, vi } from 'vitest';
 import 'vitest-axe/extend-expect';
 import * as matchers from 'vitest-axe/matchers';
