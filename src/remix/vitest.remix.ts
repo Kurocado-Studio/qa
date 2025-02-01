@@ -4,9 +4,9 @@ import { get } from 'lodash-es';
 
 import { type VitestConfig, vitestConfig } from '../common/vitestConfig';
 
-export interface RemixVitestConfig extends VitestConfig {}
+export interface VitestRemix extends VitestConfig {}
 
-export const remixVitestConfig: RemixVitestConfig = {
+export const vitestRemix: VitestRemix = {
   ...vitestConfig,
   plugins: [
     ...get(vitestConfig, ['plugins'], []),
