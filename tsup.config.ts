@@ -9,7 +9,7 @@ const tsupOptions: Options = {
   format: ['esm', 'cjs'],
   sourcemap: true,
   splitting: true,
-  target: 'esnext',
+  target: 'node20',
   treeshake: true,
 };
 

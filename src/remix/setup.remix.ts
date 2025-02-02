@@ -1,9 +1,37 @@
 import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/vitest';
 import 'fast-text-encoding';
+import { get } from 'lodash-es';
 import { expect, vi } from 'vitest';
-import 'vitest-axe/extend-expect';
-import * as matchers from 'vitest-axe/matchers';
+// the extension is needed as Vitest (through Node) does not automatically resolve on other ESModules
+import 'vitest-axe/extend-expect.js';
+import * as matchers from 'vitest-axe/matchers.js';
+
+// @see https://github.com/vitest-dev/vitest/issues/4043#issuecomment-2383567554
+class ESBuildAndJSDOMCompatibleTextEncoder extends TextEncoder {
+  constructor() {
+    super();
+  }
+
+  encode(input: string): Uint8Array<ArrayBuffer> {
+    if (typeof input !== 'string') {
+      throw new TypeError('`input` must be a string');
+    }
+
+    const decodedURI = decodeURIComponent(encodeURIComponent(input));
+    const arr = new Uint8Array(decodedURI.length);
+    const chars = decodedURI.split('');
+    for (let i = 0; i < chars.length; i++) {
+      arr[i] = get(decodedURI, [i], '').charCodeAt(0);
+    }
+    return arr;
+  }
+}
+
+Object.defineProperty(global, 'TextEncoder', {
+  value: ESBuildAndJSDOMCompatibleTextEncoder,
+  writable: true,
+});
 
 expect.extend(matchers);
 

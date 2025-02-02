@@ -5,12 +5,14 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist",
-    "outDir": "./dist",
+    "lib": ["esnext"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "rootDir": ".",
-    "sourceMap": true
+    "sourceMap": true,
+    "types": ["node"]
   },
   "exclude": ["prettier.config.js", "node_modules", "dist", "eslint.config.js"]
 }
