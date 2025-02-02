@@ -82,8 +82,8 @@ importers:
         version: 0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))
     devDependencies:
       '@kurocado-studio/styleguide':
-        specifier: 1.11.0
-        version: 1.11.0(@commitlint/cli@19.6.1(@types/node@20.5.0)(typescript@5.7.3))(@commitlint/config-conventional@19.0.3)(@testing-library/jest-dom@6.6.3)(@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.5(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@18.3.1(react@18.2.0))(react@18.2.0))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.0))(@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.5.0)))(eslint@9.16.0(jiti@2.4.2))(husky@9.0.11)(prettier@3.3.3)(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(rollup@4.34.0)(semantic-release@23.1.1(typescript@5.7.3))(typescript@5.7.3)(vite@5.4.14(@types/node@20.5.0))(vitest-axe@0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1)))(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))
+        specifier: 2.0.0-alpha.1
+        version: 2.0.0-alpha.1(@commitlint/cli@19.6.1(@types/node@20.5.0)(typescript@5.7.3))(@commitlint/config-conventional@19.0.3)(@testing-library/jest-dom@6.6.3)(@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.5(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@18.3.1(react@18.2.0))(react@18.2.0))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.0))(@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.5.0)))(eslint@9.16.0(jiti@2.4.2))(husky@9.0.11)(prettier@3.3.3)(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(rollup@4.34.0)(semantic-release@23.1.1(typescript@5.7.3))(typescript@5.7.3)(vite@5.4.14(@types/node@20.5.0))(vitest-axe@0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1)))(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))
       '@types/react':
         specifier: 19.0.8
         version: 19.0.8
@@ -916,8 +916,8 @@ packages:
   '@jspm/core@2.0.1':
     resolution: {integrity: sha512-Lg3PnLp0QXpxwLIAuuJboLeRaIhrgJjeuh797QADg3xz8wGLugQOS5DpsE8A6i6Adgzf+bacllkKZG3J0tGfDw==}
 
-  '@kurocado-studio/styleguide@1.11.0':
-    resolution: {integrity: sha512-Cb+kSwx/kvAgnwqkyP4BPAmxj6DXhtC02pJpcFUE4gXCl5jtkSAcR6B1M/pyM8K2MwI+V76AfT2jaDx2FLzmbQ==}
+  '@kurocado-studio/styleguide@2.0.0-alpha.1':
+    resolution: {integrity: sha512-ve8L2qbZy1ow9dah0E1R+1zRcX4systa6sk9MhYkk3RjOemXqk3Y+GLjAErMr6/m9k9/s4RU/HwNGC+IgRVL0Q==}
     engines: {node: '>=20'}
     peerDependencies:
       '@commitlint/cli': ^19.0.3
@@ -6958,7 +6958,7 @@ snapshots:
 
   '@jspm/core@2.0.1': {}
 
-  '@kurocado-studio/styleguide@1.11.0(@commitlint/cli@19.6.1(@types/node@20.5.0)(typescript@5.7.3))(@commitlint/config-conventional@19.0.3)(@testing-library/jest-dom@6.6.3)(@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.5(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@18.3.1(react@18.2.0))(react@18.2.0))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.0))(@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.5.0)))(eslint@9.16.0(jiti@2.4.2))(husky@9.0.11)(prettier@3.3.3)(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(rollup@4.34.0)(semantic-release@23.1.1(typescript@5.7.3))(typescript@5.7.3)(vite@5.4.14(@types/node@20.5.0))(vitest-axe@0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1)))(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))':
+  '@kurocado-studio/styleguide@2.0.0-alpha.1(@commitlint/cli@19.6.1(@types/node@20.5.0)(typescript@5.7.3))(@commitlint/config-conventional@19.0.3)(@testing-library/jest-dom@6.6.3)(@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.3.5(@types/react@19.0.8))(@types/react@19.0.8)(react-dom@18.3.1(react@18.2.0))(react@18.2.0))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.0))(@vitejs/plugin-react@4.3.4(vite@5.4.14(@types/node@20.5.0)))(eslint@9.16.0(jiti@2.4.2))(husky@9.0.11)(prettier@3.3.3)(react-dom@18.3.1(react@18.2.0))(react@18.2.0)(rollup@4.34.0)(semantic-release@23.1.1(typescript@5.7.3))(typescript@5.7.3)(vite@5.4.14(@types/node@20.5.0))(vitest-axe@0.1.0(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1)))(vitest@2.1.8(@types/node@20.5.0)(jsdom@25.0.1))':
     dependencies:
       '@babel/core': 7.26.7
       '@babel/eslint-parser': 7.26.5(@babel/core@7.26.7)(eslint@9.16.0(jiti@2.4.2))
@@ -6976,8 +6976,6 @@ snapshots:
       '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.0)
       '@trivago/prettier-plugin-sort-imports': 5.2.2(prettier@3.3.3)
       '@types/express': 4.17.21
-      '@types/jest': 29.5.14
-      '@types/jest-axe': 3.5.9
       '@types/lodash-es': 4.17.12
       '@types/mdx': 2.0.13
       '@types/node': 20.5.0

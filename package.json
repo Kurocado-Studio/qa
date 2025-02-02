@@ -74,7 +74,7 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@kurocado-studio/styleguide": "1.11.0",
+    "@kurocado-studio/styleguide": "2.0.0-alpha.1",
     "@types/react": "19.0.8",
     "commitlint": "19.6.0",
     "copyfiles": "2.4.1",

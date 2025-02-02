@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@kurocado-studio/styleguide/tsconfig/remix",
+  "extends": "@kurocado-studio/styleguide/remix/tsconfig",
   "compilerOptions": {
     "noEmit": true,
     "types": ["vitest/globals", "@testing-library/jest-dom"]
