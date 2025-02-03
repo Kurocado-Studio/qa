@@ -12,9 +12,8 @@ export const vitestConfig: VitestConfig = {
   plugins: [tsconfigPaths()],
   test: {
     coverage: {
-      // @ts-ignore since 'c8' custom
-      provider: 'c8',
-      reporter: ['text', 'html'],
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
     },
     environment: 'node',
     globals: true,
