@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import { get } from 'lodash-es';
 import type React from 'react';
 import { axe } from 'vitest-axe';
 
@@ -16,6 +15,6 @@ export const auditComponentA11y = async (
   Component: React.ReactElement,
   wrapper?: ComponentWrapper,
 ): Promise<ReturnType<typeof axe>> => {
-  const container = get(renderComponent(Component, wrapper), ['container'], '');
+  const { container } = renderComponent(Component, wrapper);
   return axe(container);
 };
