@@ -4,3 +4,4 @@ export * from './remix';
 export * from './remix/utils';
 export { defineConfig, mergeConfig } from 'vitest/config';
 export * from 'vitest-axe';
+export * from '@vitest/coverage-v8';
