@@ -9,6 +9,11 @@ export const vitestRemix: VitestRemix = {
   plugins: get(vitestConfig, ['plugins'], []),
   test: {
     ...get(vitestConfig, ['test'], {}),
+    coverage: {
+      ...get(vitestConfig, ['test', 'coverage'], {}),
+      // @ts-ignore type-mismatch
+      include: [`app/**/*.{ts,tsx}`],
+    },
     css: true,
     environment: 'jsdom',
     setupFiles: ['./setup.remix.ts'],
