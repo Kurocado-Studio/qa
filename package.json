@@ -99,9 +99,6 @@
       "import": "./dist/index.js"
     },
     "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
-    "./remix/setup": {
-      "types": "./dist/remix/setup.remix.d.ts",
-      "import": "./dist/remix/setup.remix.js"
-    }
+    "./remix/setup": "./dist/remix/setup.remix.js"
   }
 }
