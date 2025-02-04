@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "rootDir": ".",
     "sourceMap": true,
-    "types": ["node"]
+    "types": ["node"],
+    "jsx": "react"
   },
   "exclude": ["prettier.config.js", "node_modules", "dist", "eslint.config.js"]
 }

@@ -12,9 +12,10 @@ export const vitestRemix: VitestRemix = {
     coverage: {
       ...get(vitestConfig, ['test', 'coverage'], {}),
       // @ts-ignore type-mismatch
-      include: [`app/**/*.{ts,tsx}`],
+      include: [`test/**/*.test.{ts,tsx}`],
     },
     css: true,
+    tsconfig: './tsconfig.test.json',
     environment: 'jsdom',
     setupFiles: ['./setup.remix.ts'],
   },
