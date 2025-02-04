@@ -28,6 +28,13 @@ class ESBuildAndJSDOMCompatibleTextEncoder extends TextEncoder {
   }
 }
 
+if (typeof window !== 'undefined') {
+  Object.defineProperty(window, 'scrollTo', {
+    value: () => {},
+    writable: true,
+  });
+}
+
 Object.defineProperty(global, 'TextEncoder', {
   value: ESBuildAndJSDOMCompatibleTextEncoder,
   writable: true,

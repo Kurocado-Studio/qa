@@ -12,7 +12,8 @@ export const vitestRemix: VitestRemix = {
     coverage: {
       ...get(vitestConfig, ['test', 'coverage'], {}),
       // @ts-ignore type-mismatch
-      include: [`test/**/*.test.{ts,tsx}`],
+      include: ['app/**/*.{ts,tsx}'],
+      exclude: ['test/**/*.{ts,tsx}'],
     },
     css: true,
     tsconfig: './tsconfig.json',
