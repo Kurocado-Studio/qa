@@ -102,6 +102,8 @@
       "import": "./dist/index.js"
     },
     "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
-    "./remix/setup": "./dist/remix/setup.remix.js"
+    "./remix/setup": "./dist/remix/setup.remix.js",
+    "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
+    "./npm/setup": "./dist/npm/setup.npm.js"
   }
 }
