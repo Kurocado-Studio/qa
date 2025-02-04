@@ -13,7 +13,7 @@ export const vitestRemix: VitestRemix = {
       ...get(vitestConfig, ['test', 'coverage'], {}),
       // @ts-ignore type-mismatch
       include: ['app/**/*.{ts,tsx}'],
-      exclude: ['test/**/*.{ts,tsx}'],
+      exclude: ['test/**/*.{ts,tsx}', '**/*.d.ts'],
     },
     css: true,
     tsconfig: './tsconfig.json',
