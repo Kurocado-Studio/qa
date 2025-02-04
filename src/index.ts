@@ -4,3 +4,4 @@ export * from './remix';
 export * from './remix/Utils';
 export { defineConfig, mergeConfig } from 'vitest/config';
 export * from 'vitest-axe';
+export { createRemixStub } from '@remix-run/testing';

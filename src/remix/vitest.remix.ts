@@ -15,7 +15,7 @@ export const vitestRemix: VitestRemix = {
       include: [`test/**/*.test.{ts,tsx}`],
     },
     css: true,
-    tsconfig: './tsconfig.test.json',
+    tsconfig: './tsconfig.json',
     environment: 'jsdom',
     setupFiles: ['./setup.remix.ts'],
   },
