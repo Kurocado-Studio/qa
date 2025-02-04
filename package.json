@@ -63,7 +63,9 @@
     "globals": "^15.14.0",
     "jsdom": "^25.0.1",
     "lodash-es": "^4.17.21",
+    "supertest": "^7.0.0",
     "typescript": "^5.7.3",
+    "unplugin-swc": "^1.5.1",
     "util": "^0.12.5",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-dts": "^4.5.0",
@@ -104,6 +106,8 @@
     "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
     "./remix/setup": "./dist/remix/setup.remix.js",
     "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
-    "./npm/setup": "./dist/npm/setup.npm.js"
+    "./npm/setup": "./dist/npm/setup.npm.js",
+    "./nestjs/tsconfig.qa": "./dist/nestjs/tsconfig.qa.json",
+    "./nestjs/setup": "./dist/nestjs/setup.nestjs.js"
   }
 }

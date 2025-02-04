@@ -4,7 +4,12 @@ import { type Options, defineConfig } from 'tsup';
 const tsupOptions: Options = {
   clean: true,
   dts: true,
-  entry: ['src/index.ts', 'src/remix/setup.npm.ts'],
+  entry: [
+    'src/index.ts',
+    'src/nestjs/setup.nestjs.ts',
+    'src/remix/setup.remix.ts',
+    'src/remix/setup.npm.ts',
+  ],
   external: ['react'],
   format: ['esm', 'cjs'],
   sourcemap: true,
