@@ -11,7 +11,6 @@ export const vitestConfig: VitestConfig = {
       reporter: ['text', 'json', 'html'],
     },
     environment: 'node',
-    exclude: ['test/**/*.{ts,tsx}', '**/*.d.ts'],
     globals: true,
   },
 };
