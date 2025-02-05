@@ -1,12 +1,19 @@
 {
-  "extends": ["@kurocado-studio/styleguide/tsconfig/node"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "tsup.config.ts"],
+  "extends": ["@kurocado-studio/styleguide/node/tsconfig"],
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist",
-    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "outDir": "./dist",
     "resolveJsonModule": true,
-    "rootDir": "./src"
+    "rootDir": ".",
+    "sourceMap": true,
+    "types": ["node"],
+    "jsx": "react"
   },
   "exclude": ["prettier.config.js", "node_modules", "dist", "eslint.config.js"]
 }
