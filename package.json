@@ -80,7 +80,7 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@kurocado-studio/styleguide": "2.0.0-alpha.9",
+    "@kurocado-studio/styleguide": "2.2.6",
     "@types/react": "18.2.0",
     "commitlint": "19.6.0",
     "copyfiles": "2.4.1",
@@ -104,10 +104,19 @@
       "import": "./dist/index.js"
     },
     "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
-    "./remix/setup": "./dist/remix/setup.remix.js",
     "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
-    "./npm/setup": "./dist/npm/setup.npm.js",
     "./nestjs/tsconfig.qa": "./dist/nestjs/tsconfig.qa.json",
-    "./nestjs/setup": "./dist/nestjs/setup.nestjs.js"
+    "./remix/setup": {
+      "import": "./dist/remix/setup.remix.js",
+      "require": "./dist/remix/setup.remix.cjs"
+    },
+    "./npm/setup": {
+      "import": "./dist/npm/setup.npm.js",
+      "require": "./dist/npm/setup.npm.cjs"
+    },
+    "./nestjs/setup": {
+      "import": "./dist/nestjs/setup.nestjs.js",
+      "require": "./dist/nestjs/setup.nestjs.cjs"
+    }
   }
 }
