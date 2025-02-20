@@ -1,4 +1,5 @@
 /* eslint-disable import/no-default-export */
+import { execSync } from 'node:child_process';
 import { type Options, defineConfig } from 'tsup';
 
 const tsupOptions: Options = {
@@ -11,14 +12,19 @@ const tsupOptions: Options = {
     'src/remix/setup.npm.ts',
   ],
   external: ['react'],
-  format: ['esm', 'cjs'],
+  format: ['esm'],
   sourcemap: true,
   splitting: true,
   target: 'node20',
   treeshake: true,
+  onSuccess: async (): Promise<void> => {
+    execSync('copyfiles -u 1 src/**/tsconfig.*.json dist', {
+      stdio: 'inherit',
+    });
+  },
 };
 
 export default defineConfig((options: Options) => ({
-  ...tsupOptions,
   ...options,
+  ...tsupOptions,
 }));

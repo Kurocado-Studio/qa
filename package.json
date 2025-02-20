@@ -12,8 +12,11 @@
   },
   "license": "MIT",
   "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsup --dts && copyfiles -u 1 src/**/tsconfig.*.json dist",
+    "build": "rm -rf dist && tsup --dts && copyfiles -u 1 src/tsconfig/*.json dist",
     "commitlint": "pnpm exec commitlint --edit .git/COMMIT_EDITMSG",
     "eslint": "eslint --max-warnings=0 .",
     "eslint-check": "eslint --max-warnings=0 .",
@@ -35,9 +38,6 @@
       "pnpm run lint"
     ]
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.cts",
   "files": [
     "dist"
   ],
@@ -80,7 +80,7 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@kurocado-studio/styleguide": "2.2.6",
+    "@kurocado-studio/styleguide": "2.2.8",
     "@types/react": "18.2.0",
     "commitlint": "19.6.0",
     "copyfiles": "2.4.1",
@@ -107,16 +107,13 @@
     "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
     "./nestjs/tsconfig.qa": "./dist/nestjs/tsconfig.qa.json",
     "./remix/setup": {
-      "import": "./dist/remix/setup.remix.js",
-      "require": "./dist/remix/setup.remix.cjs"
+      "import": "./dist/remix/setup.remix.js"
     },
     "./npm/setup": {
-      "import": "./dist/npm/setup.npm.js",
-      "require": "./dist/npm/setup.npm.cjs"
+      "import": "./dist/npm/setup.npm.js"
     },
     "./nestjs/setup": {
-      "import": "./dist/nestjs/setup.nestjs.js",
-      "require": "./dist/nestjs/setup.nestjs.cjs"
+      "import": "./dist/nestjs/setup.nestjs.js"
     }
   }
 }
