@@ -109,14 +109,8 @@
     "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
     "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
     "./nestjs/tsconfig.qa": "./dist/nestjs/tsconfig.qa.json",
-    "./remix/setup": {
-      "import": "./dist/remix/setup.remix.js"
-    },
-    "./npm/setup": {
-      "import": "./dist/npm/setup.npm.js"
-    },
-    "./nestjs/setup": {
-      "import": "./dist/nestjs/setup.nestjs.js"
-    }
+    "./remix/setup": "./dist/remix/setup.remix.js",
+    "./npm/setup":  "./dist/npm/setup.npm.js",
+    "./nestjs/setup": "./dist/nestjs/setup.nestjs.js"
   }
 }
