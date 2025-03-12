@@ -2,6 +2,7 @@ import { json } from '@remix-run/node';
 import { createRemixStub } from '@remix-run/testing';
 import { render } from '@testing-library/react';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { axe } from 'vitest-axe';
 
 type ComponentWrapper = React.ComponentType<{ children: React.ReactNode }>;
@@ -37,3 +38,13 @@ export const renderWithRemix = (
 
   return render(<RemixStub />);
 };
+
+export function renderInReactDOM<P extends JSX.IntrinsicAttributes>(
+  Component: React.ComponentType<P>,
+  props: P,
+  container: HTMLElement,
+): () => void {
+  container.innerHTML = '';
+  ReactDOM.render(<Component {...props} />, container);
+  return () => ReactDOM.unmountComponentAtNode(container);
+}
