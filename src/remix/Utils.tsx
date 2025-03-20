@@ -1,34 +1,30 @@
 import { json } from '@remix-run/node';
 import { createRemixStub } from '@remix-run/testing';
-import { render } from '@testing-library/react';
+import { type RenderResult, render } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { axe } from 'vitest-axe';
 
-type ComponentWrapper = React.ComponentType<{ children: React.ReactNode }>;
+export function renderComponent(
+  ...options: Parameters<typeof render>
+): RenderResult {
+  return render(...options);
+}
 
-export const renderComponent = (
-  Component: React.ReactElement,
-  wrapper?: ComponentWrapper,
-): ReturnType<typeof render> => {
-  return render(Component, { wrapper });
-};
-
-export const auditComponentA11y = async (
-  Component: React.ReactElement,
-  wrapper?: ComponentWrapper,
-): Promise<ReturnType<typeof axe>> => {
-  const { container } = renderComponent(Component, wrapper);
+export async function auditComponentA11y(
+  ...options: Parameters<typeof render>
+): Promise<ReturnType<typeof axe>> {
+  const { container } = renderComponent(...options);
   return axe(container);
-};
+}
 
 export const renderWithRemix = (
-  Component: React.FC,
+  Component?: React.FunctionComponent,
   loaderData?: any,
-): ReturnType<typeof render> => {
+): RenderResult => {
   const RemixStub = createRemixStub([
     {
       path: '/',
+      // @ts-ignore mismatch in types
       Component,
       loader() {
         return json(loaderData || {});
@@ -38,13 +34,3 @@ export const renderWithRemix = (
 
   return render(<RemixStub />);
 };
-
-export function renderInReactDOM<P extends JSX.IntrinsicAttributes>(
-  Component: React.ComponentType<P>,
-  props: P,
-  container: HTMLElement,
-): () => void {
-  container.innerHTML = '';
-  ReactDOM.render(<Component {...props} />, container);
-  return () => ReactDOM.unmountComponentAtNode(container);
-}
