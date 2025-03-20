@@ -19,13 +19,13 @@ importers:
         version: 2.16.0(typescript@5.8.2)
       '@remix-run/testing':
         specifier: ^2.15.3
-        version: 2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)
+        version: 2.16.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)(typescript@5.8.2)
       '@testing-library/jest-dom':
         specifier: ^6.6.3
         version: 6.6.3
       '@testing-library/react':
         specifier: ^16.2.0
-        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 16.2.0(@testing-library/dom@10.4.0)(@types/web-dom@19.0.0)(@types/web@19.0.0)(web-dom@19.0.0(web@19.0.0))(web@19.0.0)
       '@testing-library/user-event':
         specifier: ^14.6.1
         version: 14.6.1(@testing-library/dom@10.4.0)
@@ -79,7 +79,7 @@ importers:
         version: 4.17.21
       react-dom:
         specifier: 19.0.0
-        version: 19.0.0(react@19.0.0)
+        version: 19.0.0(web@19.0.0)
       supertest:
         specifier: ^7.0.0
         version: 7.0.0
@@ -110,7 +110,7 @@ importers:
     devDependencies:
       '@kurocado-studio/styleguide':
         specifier: 2.3.0
-        version: 2.3.0(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.7.1)(@remix-run/react@2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.35.0)(semantic-release@23.1.1(typescript@5.8.2))(typescript@5.8.2)(vite@6.1.1(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.6(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.0))(yaml@2.7.0)
+        version: 2.3.0(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.7.1)(@web-run/web@2.16.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.35.0)(semantic-release@23.1.1(typescript@5.8.2))(typescript@5.8.2)(vite@6.1.1(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.6(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.0))(yaml@2.7.0)
       '@types/react':
         specifier: 19.0.0
         version: 19.0.0
@@ -7456,7 +7456,7 @@ snapshots:
       '@commitlint/cli': 19.8.0(@types/node@22.13.10)(typescript@5.8.2)
       '@commitlint/config-conventional': 19.7.1
       '@eslint/js': 9.22.0
-      '@remix-run/dev': 2.16.0(@remix-run/react@2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2))(@types/node@20.5.0)(jiti@2.4.2)(typescript@5.8.2)(vite@6.1.1(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.0))(yaml@2.7.0)
+      '@remix-run/dev': 2.16.0(@web-run/web@2.16.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)(typescript@5.8.2))(@types/node@20.5.0)(jiti@2.4.2)(typescript@5.8.2)(vite@6.1.1(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.0))(yaml@2.7.0)
       '@rushstack/eslint-patch': 1.11.0
       '@semantic-release/changelog': 6.0.3(semantic-release@23.1.1(typescript@5.8.2))
       '@semantic-release/git': 10.0.1(semantic-release@23.1.1(typescript@5.8.2))
@@ -7504,8 +7504,8 @@ snapshots:
       - '@babel/core'
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-pug'
-      - '@remix-run/react'
-      - '@remix-run/serve'
+      - '@web-run/web'
+      - '@web-run/serve'
       - '@shopify/prettier-plugin-liquid'
       - '@swc/helpers'
       - '@types/eslint'
@@ -7927,7 +7927,7 @@ snapshots:
       '@mdx-js/mdx': 2.3.0
       '@npmcli/package-json': 4.0.1
       '@remix-run/node': 2.16.0(typescript@5.8.2)
-      '@remix-run/react': 2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)
+      '@remix-run/react': 2.16.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)(typescript@5.8.2)
       '@remix-run/router': 1.23.0
       '@remix-run/server-runtime': 2.16.0(typescript@5.8.2)
       '@types/mdx': 2.0.13
@@ -8012,9 +8012,9 @@ snapshots:
       '@remix-run/router': 1.23.0
       '@remix-run/server-runtime': 2.16.0(typescript@5.8.2)
       react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      react-router: 6.30.0(react@19.0.0)
-      react-router-dom: 6.30.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react-dom: 19.0.0(web@19.0.0)
+      react-router: 6.30.0(web@19.0.0)
+      react-router-dom: 6.30.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)
       turbo-stream: 2.4.0
     optionalDependencies:
       typescript: 5.8.2
@@ -8036,14 +8036,14 @@ snapshots:
   '@remix-run/testing@2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)':
     dependencies:
       '@remix-run/node': 2.16.0(typescript@5.8.2)
-      '@remix-run/react': 2.16.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)
+      '@remix-run/react': 2.16.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)(typescript@5.8.2)
       '@remix-run/router': 1.23.0
       react: 19.0.0
-      react-router-dom: 6.30.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react-router-dom: 6.30.0(web-dom@19.0.0(web@19.0.0))(web@19.0.0)
     optionalDependencies:
       typescript: 5.8.2
     transitivePeerDependencies:
-      - react-dom
+      - web-dom
 
   '@remix-run/web-blob@3.1.0':
     dependencies:
@@ -8411,7 +8411,7 @@ snapshots:
       '@babel/runtime': 7.26.9
       '@testing-library/dom': 10.4.0
       react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
+      react-dom: 19.0.0(web@19.0.0)
     optionalDependencies:
       '@types/react': 19.0.0
       '@types/react-dom': 19.0.0
@@ -12420,8 +12420,8 @@ snapshots:
     dependencies:
       '@remix-run/router': 1.23.0
       react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      react-router: 6.30.0(react@19.0.0)
+      react-dom: 19.0.0(web@19.0.0)
+      react-router: 6.30.0(web@19.0.0)
 
   react-router@6.30.0(react@19.0.0):
     dependencies:

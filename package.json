@@ -108,10 +108,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./remix/tsconfig.qa": "./dist/remix/tsconfig.qa.json",
+    "./web/tsconfig.qa": "./dist/web/tsconfig.qa.json",
     "./npm/tsconfig.qa": "./dist/npm/tsconfig.qa.json",
     "./nestjs/tsconfig.qa": "./dist/nestjs/tsconfig.qa.json",
-    "./remix/setup": "./dist/remix/setup.remix.js",
+    "./web/setup": "./dist/web/setup.web.js",
     "./npm/setup": "./dist/npm/setup.npm.js",
     "./nestjs/setup": "./dist/nestjs/setup.nestjs.js"
   }

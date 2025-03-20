@@ -2,9 +2,9 @@ import { get } from 'lodash-es';
 
 import { type VitestConfig, vitestConfig } from '../common/vitestConfig';
 
-export interface VitestRemix extends VitestConfig {}
+export interface VitestWeb extends VitestConfig {}
 
-export const vitestRemix: VitestRemix = {
+export const vitestReact: VitestWeb = {
   ...vitestConfig,
   plugins: get(vitestConfig, ['plugins'], []),
   test: {
@@ -18,6 +18,6 @@ export const vitestRemix: VitestRemix = {
     css: true,
     tsconfig: './tsconfig.json',
     environment: 'jsdom',
-    setupFiles: ['./setup.remix.ts'],
+    setupFiles: ['./setup.web.ts'],
   },
 };
