@@ -4,5 +4,7 @@ export * from './npm';
 export * from './remix';
 export * from './react';
 export * from './nestjs';
+export { faker } from '@faker-js/faker';
+
 export { createRemixStub } from '@remix-run/testing';
 export { defineConfig, mergeConfig } from 'vitest/config';

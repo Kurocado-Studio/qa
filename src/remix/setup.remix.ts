@@ -13,7 +13,7 @@ class ESBuildAndJSDOMCompatibleTextEncoder extends TextEncoder {
     super();
   }
 
-  encode(input: string): Uint8Array<ArrayBuffer> {
+  encode(input: string): Uint8Array {
     if (typeof input !== 'string') {
       throw new TypeError('`input` must be a string');
     }

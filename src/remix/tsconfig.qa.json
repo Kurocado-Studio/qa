@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "noEmit": true,
-    "types": ["vitest/globals", "@testing-library/jest-dom"]
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": ["test/**/*.test.ts", "test/**/*.test.tsx", "setup.remix.ts"]
 }
