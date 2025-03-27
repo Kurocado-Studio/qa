@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@eslint/js':
         specifier: ^9.19.0
-        version: 9.22.0
+        version: 9.23.0
       '@remix-run/node':
         specifier: ^2.15.3
         version: 2.16.2(typescript@5.8.2)
@@ -1041,10 +1041,6 @@ packages:
 
   '@eslint/eslintrc@3.3.1':
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@eslint/js@9.22.0':
-    resolution: {integrity: sha512-vLFajx9o8d1/oL2ZkpMYbkLv8nDB6yaIwFNt7nI4+I80U/z03SxmfOMsLbvWr3p7C+Wnoh//aOu2pQW8cS0HCQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.23.0':
@@ -7503,8 +7499,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.22.0': {}
-
   '@eslint/js@9.23.0': {}
 
   '@eslint/object-schema@2.1.6': {}
@@ -7579,7 +7573,7 @@ snapshots:
       '@babel/eslint-parser': 7.27.0(@babel/core@7.26.10)(eslint@9.23.0(jiti@2.4.2))
       '@commitlint/cli': 19.8.0(@types/node@22.13.13)(typescript@5.8.2)
       '@commitlint/config-conventional': 19.7.1
-      '@eslint/js': 9.22.0
+      '@eslint/js': 9.23.0
       '@remix-run/dev': 2.16.2(@remix-run/react@2.16.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.8.2))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.2)(vite@6.1.1(@types/node@22.13.13)(jiti@2.4.2)(yaml@2.7.0))(yaml@2.7.0)
       '@rushstack/eslint-patch': 1.11.0
       '@semantic-release/changelog': 6.0.3(semantic-release@23.1.1(typescript@5.8.2))
