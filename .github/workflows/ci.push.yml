@@ -1,12 +1,4 @@
-#
-# Made with ❤️ and adobo by Kurocado Studio
-# Copyright (c) 2024. All Rights Reserved.
-#
-# Learn more about Kurocado Studio: {@link https://www.kurocado.studio}
-#
-# Explore our open-source projects: {@link https://github.com/kurocado-studio}
-#
-name: CI/CD Pipeline
+name: CI/CD Main Pipeline
 
 permissions:
   contents: write
@@ -18,25 +10,26 @@ on:
   push:
     branches:
       - main
-      - alpha
-      - beta
-      - canary
-      - pre/rc
-  pull_request:
 
 jobs:
   lint:
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.lint.yml@main
-    secrets: inherit
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   document:
     needs: lint
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.document.yml@main
-    secrets: inherit
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      instance_id: dcs
 
   release:
     needs: lint
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.release.yml@main
-    secrets: inherit
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     with:
       branch_name: ${{ github.ref_name }}
