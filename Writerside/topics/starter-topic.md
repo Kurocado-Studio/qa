@@ -53,12 +53,12 @@ processes for both developers and stakeholders.
 
 ### Constraints
 
-- **Resource Allocation**  
-  Limited time and resources require prioritizing core testing needs first, expanding coverage
-  incrementally.
-- **Client Adaptability**  
-  Must provide enough flexibility for client-specific testing requirements without compromising
-  baseline standards.
+- **Resource Allocation**
+  - Limited time and resources require prioritizing core testing needs first, expanding coverage
+    incrementally.
+- **Client Adaptability**
+  - Must provide enough flexibility for client-specific testing requirements without compromising
+    baseline standards.
 
 ## Key Milestones
 
