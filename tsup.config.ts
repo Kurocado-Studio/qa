@@ -10,6 +10,7 @@ const tsupOptions: Options = {
     'src/nestjs/setup.nestjs.ts',
     'src/remix/setup.remix.ts',
     'src/remix/setup.npm.ts',
+    'src/react/setup.react.ts',
   ],
   external: ['react', 'react-dom'],
   format: ['esm'],
