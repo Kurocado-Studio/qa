@@ -2,9 +2,9 @@ import { get } from 'lodash-es';
 
 import { type VitestConfig, vitestConfig } from '../common/vitestConfig';
 
-export interface VitestReact extends VitestConfig {}
+export interface VitestWeb extends VitestConfig {}
 
-export const vitestReact: VitestReact = {
+export const vitestReact: VitestWeb = {
   ...vitestConfig,
   plugins: get(vitestConfig, ['plugins'], []),
   test: {
@@ -12,10 +12,12 @@ export const vitestReact: VitestReact = {
     coverage: {
       ...get(vitestConfig, ['test', 'coverage'], {}),
       // @ts-ignore type-mismatch
-      include: ['src/**/*.{ts,tsx}'],
+      include: ['app/**/*.{ts,tsx}', 'src/**/*.{ts,tsx}'],
+      exclude: ['test/**/*.{ts,tsx}', '**/*.d.ts'],
     },
+    css: true,
     tsconfig: './tsconfig.json',
-    environment: 'node',
-    setupFiles: ['./setup.react.ts'],
+    environment: 'jsdom',
+    setupFiles: ['./setup.web.ts'],
   },
 };

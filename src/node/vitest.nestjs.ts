@@ -23,6 +23,6 @@ export const vitestNestjs: VitestNestjs = {
     },
     tsconfig: './tsconfig.json',
     environment: 'node',
-    setupFiles: ['./setup.nestjs.ts'],
+    setupFiles: ['./setup.node.ts'],
   },
 };

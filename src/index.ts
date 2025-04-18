@@ -1,8 +1,4 @@
-export * as ReactTestingLibrary from '@testing-library/react';
 export * from './common/vitestConfig';
-export * from './npm';
-export * from './remix';
-export * from './react';
-export * from './nestjs';
-export { createRemixStub } from '@remix-run/testing';
+export { faker } from '@faker-js/faker';
+
 export { defineConfig, mergeConfig } from 'vitest/config';
