@@ -6,6 +6,7 @@ const tsupOptions: Options = {
   clean: true,
   dts: true,
   entry: [
+    'src/index.ts',
     'src/node/index.ts',
     'src/node/setup.node.ts',
     'src/web/index.ts',
