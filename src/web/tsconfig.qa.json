@@ -1,7 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["test/**/*.test.ts", "test/**/*.test.tsx", "setup.web.ts"]
+  "include": ["test", "./setup.react.ts"]
 }

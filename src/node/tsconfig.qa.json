@@ -4,5 +4,5 @@
     "noEmit": true,
     "types": ["vitest/globals"]
   },
-  "include": ["test/**/*.test.ts", "test/**/*.test.tsx", "setup.nestjs.ts"]
+  "include": ["test/**/*.test.ts", "test/**/*.test.tsx", "setup.node.ts"]
 }

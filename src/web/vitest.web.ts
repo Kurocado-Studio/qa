@@ -12,7 +12,7 @@ export const vitestReact: VitestWeb = {
     coverage: {
       ...get(vitestConfig, ['test', 'coverage'], {}),
       // @ts-ignore type-mismatch
-      include: ['app/**/*.{ts,tsx}'],
+      include: ['app/**/*.{ts,tsx}', 'src/**/*.{ts,tsx}'],
       exclude: ['test/**/*.{ts,tsx}', '**/*.d.ts'],
     },
     css: true,
