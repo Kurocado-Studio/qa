@@ -80,7 +80,7 @@
   },
   "devDependencies": {
     "@kurocado-studio/styleguide": "2.5.2",
-    "@types/react": "19.1.4",
+    "@types/react": "19.1.5",
     "commitlint": "19.8.1",
     "copyfiles": "2.4.1",
     "eslint": "9.27.0",
